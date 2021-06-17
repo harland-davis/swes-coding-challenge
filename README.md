@@ -2,7 +2,7 @@
 
 ## Please Note
 
-*This position will be working primarily on a Ruby on Rails stack, so while we prefer you complete this challenge in Rails, you are free to use a stack you are more comfortable with (e.g. Node, Python, etc), while still following the instructions here for the project. 
+*This position will be working primarily on a Ruby on Rails stack, so while we prefer you complete this challenge in Rails, you are free to use a stack you are more comfortable with (e.g. Node, Python, etc), while still following the instructions here for the project.* 
 
 A few more notes: 
 
