@@ -1,4 +1,17 @@
-# Rails Challenge Take-Home
+# SWES Take-Home Challenge 
+
+## Please Note
+
+*This position will be working primarily on a Ruby on Rails stack, so while we prefer you complete this challenge in Rails, you are free to use a stack you are more comfortable with (e.g. Node, Python, etc), while still following the instructions here for the project. If you have any questions, please email **dvance@ucar.edu** or **metzger@ucar.edu***
+
+A few more notes: 
+
+ - You will be starting with a boiler plate rails app (but remember, you are free to discard the Rails code and build this project in any stack). 
+ - Please fork this repo and submit the URL via email to **dvance@ucar.edu** and **metzger@ucar.edu** - 
+ - If using Rails, use MySQL for the db. Make sure to have MySQL installed on your local machine or connect a docker instance of MySQL
+ - If you have any questions about the project, please feel free to email: **metzger@ucar.edu** or **dvance@ucar.edu**
+ 
+### Intro
 ---
 Welcome, developer, to CoShared! 
 
@@ -76,12 +89,5 @@ Bonus: (not required but if you have time)
  - Users should be able to see the number of employees in a building on the building's show page
  - Create some rspec any part of this project. 
 
-
-A few more notes: 
-
- - You will be start with a boiler plate rails app. 
- - You will be using MySQL for the db. Make sure to have MySQL installed on your local machine or connect a docker instance of MySQL
- - Please fork your project and submit the URL via email to **metzger@ucar.edu**
- - If you have any questions about the project, please feel free to email: **metzger@ucar.edu**
  
 
