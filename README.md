@@ -2,12 +2,12 @@
 
 ## Please Note
 
-*This position will be working primarily on a Ruby on Rails stack, so while we prefer you complete this challenge in Rails, you are free to use a stack you are more comfortable with (e.g. Node, Python, etc), while still following the instructions here for the project. If you have any questions, please email **dvance@ucar.edu** or **metzger@ucar.edu***
+*This position will be working primarily on a Ruby on Rails stack, so while we prefer you complete this challenge in Rails, you are free to use a stack you are more comfortable with (e.g. Node, Python, etc), while still following the instructions here for the project. 
 
 A few more notes: 
 
  - You will be starting with a boiler plate rails app (but remember, you are free to discard the Rails code and build this project in any stack). 
- - Please fork this repo and submit the URL via email to **dvance@ucar.edu** and **metzger@ucar.edu** - 
+ - Please fork this repo and submit the URL via email to **dvance@ucar.edu** and **metzger@ucar.edu** 
  - If using Rails, use MySQL for the db. Make sure to have MySQL installed on your local machine or connect a docker instance of MySQL
  - If you have any questions about the project, please feel free to email: **metzger@ucar.edu** or **dvance@ucar.edu**
  
