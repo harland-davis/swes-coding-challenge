@@ -1,4 +1,4 @@
-# SWES Take-Home Challenge 
+# SWES Coding Challenge 
 
 ## Please Note
 
