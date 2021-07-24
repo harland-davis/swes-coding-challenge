@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Building:</strong>
+  <%= @office.building_id %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @office.company_id %>
+</p>
+
+<p>
+  <strong>Floor:</strong>
+  <%= @office.floor %>
+</p>
+
+<%= link_to 'Edit', edit_office_path(@office) %> |
+<%= link_to 'Back', offices_path %>
