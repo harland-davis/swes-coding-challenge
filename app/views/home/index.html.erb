@@ -9,7 +9,7 @@
   <div class="card-body">
     <h5 class="card-title">View Buildings</h5>
     <p class="card-text">See a list of all your properties as well as their details.</p>
-    <button type="button" class="btn btn-primary btn-med">See Your Buildings</button>
+    <%= link_to "See Your Buildings", buildings_path, class: "nav-link" %>
   </div>
 </div>
 <br/>
@@ -18,6 +18,6 @@
   <div class="card-body">
     <h5 class="card-title">Manage Companies</h5>
     <p class="card-text">Create a company and place them in an available floor.</p>
-    <button type="button" class="btn btn-primary btn-med">Add New Companies</button>
+    <%= link_to "See Your Companies", companies_path, class: "nav-link" %>
   </div>
 </div>

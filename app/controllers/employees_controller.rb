@@ -50,7 +50,8 @@ class EmployeesController < ApplicationController
 
   # DELETE /employees/1 or /employees/1.json
   def destroy
-    @employee.destroy = Employee.find(params[:id])
+    @employee = Employee.find(params[:id])
+    @employee.destroy
     respond_to do |format|
       if @employee.destroy
         format.html { redirect_to employees_url, notice: "Employee was successfully destroyed." }

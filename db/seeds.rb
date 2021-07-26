@@ -1,6 +1,6 @@
-Office.destroy_all
 Employee.destroy_all
 Company.destroy_all
+Office.destroy_all
 Building.destroy_all
 
 building1 = Building.create(
@@ -47,26 +47,26 @@ office7 = Office.create(building: building3, company: company4, floor: 1)
 office8= Office.create(building: building3, company: vacant, floor: 2)
 office9 = Office.create(building: building3, company: company6, floor: 3)
 
-employee1 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company1 ,)
-employee2 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company1 ,)
+employee1 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company1)
+employee2 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company1)
 
-employee3 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company2 ,)
-employee4 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company2 ,)
-employee5 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company2 ,)
+employee3 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company2)
+employee4 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company2)
+employee5 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company2)
 
-employee6 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company3 ,)
-employee7 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company3 ,)
-employee8 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company3 ,)
-employee9 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company3 ,)
+employee6 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company3)
+employee7 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company3)
+employee8 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company3)
+employee9 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company3)
 
-employee9 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company4 ,)
-employee9 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company4 ,)
-employee9 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company4 ,)
+employee9 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company4)
+employee9 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company4)
+employee9 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company4)
 
-employee10 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company5 ,)
-employee11 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company5 ,)
-employee12 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company5 ,)
-employee13 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company5 ,)
+employee10 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company5)
+employee11 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company5)
+employee12 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company5)
+employee13 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company5)
 
-employee13 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company6 ,)
-employee13 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company6 ,)
+employee14 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company6)
+employee15 = Employee.create(name: Faker::Name.name, title: Faker::Job.title , company: company6)

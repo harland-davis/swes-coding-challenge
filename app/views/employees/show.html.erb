@@ -15,7 +15,8 @@
   <strong>Works for:</strong>
   <%= @employee.company.name %>
 </p>
-
+<br/>
+<%= button_to "Delete Employee", employee_path, :method=>:delete, :class=>:destroy, data: { confirm: 'Are you sure?' } %>
+<br/>
 <%= link_to 'Back', companies_path(@company) %> |
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Destroy', @employee, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Edit', edit_employee_path(@employee) %> 
