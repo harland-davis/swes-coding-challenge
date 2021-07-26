@@ -8,6 +8,7 @@ class EmployeesController < ApplicationController
 
   # GET /employees/1 or /employees/1.json
   def show
+    @employee = Employee.find(params[:id])
   end
 
   # GET /employees/new
@@ -49,10 +50,14 @@ class EmployeesController < ApplicationController
 
   # DELETE /employees/1 or /employees/1.json
   def destroy
-    @employee.destroy
+    @employee.destroy = Employee.find(params[:id])
     respond_to do |format|
-      format.html { redirect_to employees_url, notice: "Employee was successfully destroyed." }
-      format.json { head :no_content }
+      if @employee.destroy
+        format.html { redirect_to employees_url, notice: "Employee was successfully destroyed." }
+        format.json { head :no_content }
+      else
+        format.html { redirect_to @employee, notice: "Employee was not successfully deleted." }
+      end
     end
   end
 

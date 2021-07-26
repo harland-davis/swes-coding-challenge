@@ -1,2 +1,2 @@
-module BuildingsHelper
+module BuildingsHelper  
 end

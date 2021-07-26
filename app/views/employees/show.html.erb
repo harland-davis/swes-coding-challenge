@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h1>
   <%= @employee.name %>
-</p>
+</h1>
+
+<br/>
 
 <p>
   <strong>Title:</strong>
@@ -11,9 +12,10 @@
 </p>
 
 <p>
-  <strong>Company:</strong>
-  <%= @employee.company_id %>
+  <strong>Works for:</strong>
+  <%= @employee.company.name %>
 </p>
 
+<%= link_to 'Back', companies_path(@company) %> |
 <%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Back', employees_path %>
+<%= link_to 'Destroy', @employee, method: :delete, data: { confirm: 'Are you sure?' } %>

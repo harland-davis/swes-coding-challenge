@@ -3,11 +3,12 @@ class CompaniesController < ApplicationController
 
   # GET /companies or /companies.json
   def index
-    @companies = Company.all
+    @companies = Company.all.includes([:buildings, :offices])
   end
 
   # GET /companies/1 or /companies/1.json
   def show
+    @company = Company.find(params[:id])
   end
 
   # GET /companies/new

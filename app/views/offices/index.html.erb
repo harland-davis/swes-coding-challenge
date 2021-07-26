@@ -2,7 +2,7 @@
 
 <h1>Offices</h1>
 
-<table>
+<table class="table table-striped table-hover">
   <thead>
     <tr>
       <th>Building</th>
@@ -15,8 +15,8 @@
   <tbody>
     <% @offices.each do |office| %>
       <tr>
-        <td><%= office.building_id %></td>
-        <td><%= office.company_id %></td>
+        <td><%= office.building.name %></td>
+        <td><%= office.company.name %></td>
         <td><%= office.floor %></td>
         <td><%= link_to 'Show', office %></td>
         <td><%= link_to 'Edit', edit_office_path(office) %></td>

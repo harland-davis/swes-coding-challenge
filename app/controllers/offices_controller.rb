@@ -3,11 +3,12 @@ class OfficesController < ApplicationController
 
   # GET /offices or /offices.json
   def index
-    @offices = Office.all
+    @offices = Office.all.includes([:building, :company])
   end
 
   # GET /offices/1 or /offices/1.json
   def show
+    @office = Office.find(params[:id])
   end
 
   # GET /offices/new
