@@ -1,9 +1,10 @@
 class OfficesController < ApplicationController
-  before_action :set_office, only: %i[ show edit update destroy ]
+  before_action :get_building 
+  before_action :set_office, only: [:show :edit :update :destroy ]
 
   # GET /offices or /offices.json
   def index
-    @offices = Office.all.includes([:building, :company])
+    @offices = @buildings.offices
   end
 
   # GET /offices/1 or /offices/1.json
@@ -13,7 +14,7 @@ class OfficesController < ApplicationController
 
   # GET /offices/new
   def new
-    @office = Office.new
+    @office = @building.offices.build
   end
 
   # GET /offices/1/edit
@@ -22,11 +23,11 @@ class OfficesController < ApplicationController
 
   # POST /offices or /offices.json
   def create
-    @office = Office.new(office_params)
+    @office = @building.offices.build(office_params)
 
     respond_to do |format|
       if @office.save
-        format.html { redirect_to @office, notice: "Office was successfully created." }
+        format.html { redirect_to building_offices_path(@building), notice: "Office was successfully created." }
         format.json { render :show, status: :created, location: @office }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +40,7 @@ class OfficesController < ApplicationController
   def update
     respond_to do |format|
       if @office.update(office_params)
-        format.html { redirect_to @office, notice: "Office was successfully updated." }
+        format.html { redirect_to building_office_path(@building), notice: "Office was successfully updated." }
         format.json { render :show, status: :ok, location: @office }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,15 +53,19 @@ class OfficesController < ApplicationController
   def destroy
     @office.destroy
     respond_to do |format|
-      format.html { redirect_to offices_url, notice: "Office was successfully destroyed." }
+      format.html { redirect_to building_offices_path(@building), notice: "Office was successfully destroyed." }
       format.json { head :no_content }
     end
   end
 
   private
+    def get_building
+      @building = Building.find(params[:building_id])
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_office
-      @office = Office.find(params[:id])
+      @office = @building.office.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
