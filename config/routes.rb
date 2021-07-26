@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :buildings do
     resources :offices
-      resources :buildings
+      resources :companies
         resources :employees
   end
 

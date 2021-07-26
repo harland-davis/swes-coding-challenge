@@ -30,7 +30,7 @@
   <strong>Companies in building:</strong>
   <% @building.companies.each do |company| %>
       <br/><%= company.name unless company.name == "Vacant Floor"%>
-    <%= link_to 'Show', company %>
+    
     <% end %>
 </p>
 

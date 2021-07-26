@@ -5,18 +5,7 @@ class BuildingsController < ApplicationController
   def index
     @buildings = Building.all.includes([:companies, :offices])
 
-    @show_floors = "There are no vacant floors"
-
-    # render json: @buildings, include:[:companies, :offices]
   end
-
-  # def floors
-  #   @show_floors = if Building.offices.name == "Vacant Floor"
-  #     building.companies.floor
-  #   else
-  #     "There are no floors available in this building."
-  #   end
-  # end
 
   # GET /buildings/1 or /buildings/1.json
   def show

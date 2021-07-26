@@ -1,9 +1,10 @@
 class CompaniesController < ApplicationController
+  before_action :get_office
   before_action :set_company, only: %i[ show edit update destroy ]
 
   # GET /companies or /companies.json
   def index
-    @companies = Company.all.includes([:buildings, :offices])
+    @companies = @offices.companies
   end
 
   # GET /companies/1 or /companies/1.json
@@ -13,7 +14,7 @@ class CompaniesController < ApplicationController
 
   # GET /companies/new
   def new
-    @company = Company.new
+    @company = @office.offices.build
   end
 
   # GET /companies/1/edit
@@ -58,6 +59,8 @@ class CompaniesController < ApplicationController
   end
 
   private
+    def get_office 
+      @office = Company.find(params[:office_id])
     # Use callbacks to share common setup or constraints between actions.
     def set_company
       @company = Company.find(params[:id])
