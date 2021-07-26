@@ -1,3 +1,3 @@
 class Employee < ApplicationRecord
-  belongs_to :company, dependent: :destroy
+  belongs_to :company
 end

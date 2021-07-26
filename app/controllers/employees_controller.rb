@@ -54,7 +54,7 @@ class EmployeesController < ApplicationController
     @employee.destroy
     respond_to do |format|
       if @employee.destroy
-        format.html { redirect_to employees_url, notice: "Employee was successfully destroyed." }
+        format.html { redirect_to employees_url, notice: "Employee was successfully deleted." }
         format.json { head :no_content }
       else
         format.html { redirect_to @employee, notice: "Employee was not successfully deleted." }
